@@ -1,0 +1,8 @@
+{
+  "name": "pivot",
+  "version": "0.0.1",
+  "main": "./lib/middleware",
+  "dependencies": {
+    "debug": "~0.7.2"
+  }
+}
