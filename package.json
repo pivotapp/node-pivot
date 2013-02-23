@@ -1,0 +1,27 @@
+{
+  "name": "pivot",
+  "version": "0.0.1",
+  "description": "Simple feature, multi-variant and A/B testing",
+  "main": "./lib/pivot",
+  "scripts": {
+    "test": "NODE_ENV=test mocha"
+  },
+  "keywords": [
+    "testing",
+    "AB",
+    "multivariant",
+    "multi-variant",
+    "feature"
+  ],
+  "author": "Cameron Bytheway",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "~0.7.2",
+    "async": "~0.2.5"
+  },
+  "devDependencies": {
+    "should": "~1.2.2",
+    "supertest": "~0.5.1",
+    "mocha": "~1.8.1"
+  }
+}
