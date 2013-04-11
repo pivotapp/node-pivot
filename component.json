@@ -1,0 +1,20 @@
+{
+  "name": "pivot",
+  "repo": "CamShaft/pivot",
+  "description": "Simple feature, multi-variant and A/B testing",
+  "version": "0.1.0",
+  "keywords": [],
+  "dependencies": {
+    "CamShaft/require-component": "*",
+    "component/each": "*",
+    "component/find": "*",
+    "visionmedia/debug": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "lib/pivot.js",
+  "scripts": [
+    "lib/pivot.js",
+    "lib/proto.js"
+  ]
+}

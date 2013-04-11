@@ -1,6 +1,6 @@
 {
   "name": "pivot",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Simple feature, multi-variant and A/B testing",
   "main": "./lib/pivot",
   "scripts": {
@@ -17,11 +17,15 @@
   "license": "MIT",
   "dependencies": {
     "debug": "~0.7.2",
-    "async": "~0.2.5"
+    "batch": "~0.3.2",
+    "each-component": "0.0.1",
+    "require-component": "~0.1.0",
+    "find": "https://github.com/component/find/archive/master.tar.gz"
   },
   "devDependencies": {
     "should": "~1.2.2",
     "supertest": "~0.5.1",
-    "mocha": "~1.8.1"
+    "mocha": "~1.8.1",
+    "express": "~3.1.0"
   }
 }

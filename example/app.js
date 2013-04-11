@@ -12,7 +12,7 @@ var app = module.exports = express();
 /**
  * Features
  */
-// Defaults to [true, false]
+// Split test/AB test (defaults to [true, false])
 experiments.feature("validate");
 // Multi-variant
 experiments.feature("loginButtonColor", ["red", "blue", "green", "yellow"]);
@@ -39,7 +39,7 @@ app.get("/ad-hoc", function(req, res, next) {
   res.feature("welcomeMessage", ["message1", "message2"], function(err) {
     if(err) return next(err);
     
-    if(res.features.validate) {
+    if(res.locals.features.validate) {
       // Our validate feature is turned on
     }
     else {

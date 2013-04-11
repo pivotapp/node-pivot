@@ -80,7 +80,7 @@ experiments.lookup(function(){
     }
   };
 }());
- 
+
 /**
  * Tells pivot which variant gets assigned to the user
  *
