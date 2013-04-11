@@ -18,7 +18,7 @@
   "dependencies": {
     "debug": "~0.7.2",
     "batch": "~0.3.2",
-    "each-component": "0.0.1",
+    "each-component": "https://github.com/CamShaft/each/archive/master.tar.gz",
     "require-component": "~0.1.0",
     "find": "https://github.com/component/find/archive/master.tar.gz"
   },
