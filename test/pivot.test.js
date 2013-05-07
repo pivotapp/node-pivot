@@ -16,7 +16,10 @@ describe("Pivot", function() {
   });
 
   it("should setup a feature", function(done) {
-    experiments.feature("testing123", ["test1","test2","test3"]);
+    experiments
+      .feature("testing123")
+      .variants(["test1","test2","test3"])
+      .create();
 
     experiments.variant("testing123", {}, function(err, variant) {
       if(err) return done(err);
@@ -31,8 +34,14 @@ describe("Pivot", function() {
   });
 
   it("should setup a multiple feature", function(done) {
-    experiments.feature("testing123", ["test1","test2","test3"]);
-    experiments.feature("myFeature");
+    experiments
+      .feature("testing123")
+      .variants(["test1","test2","test3"])
+      .create();
+
+    experiments
+      .feature("myFeature")
+      .create();
 
     experiments.variant("myFeature", {}, function(err, variant) {
       if(err) return done(err);

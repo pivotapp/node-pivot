@@ -14,7 +14,10 @@ describe("Pivot Server", function() {
   });
 
   it("should setup a feature", function(done) {
-    experiments.feature("testing123", ["test1","test2","test3"]);
+    experiments
+      .feature("testing123")
+      .variants(["test1","test2","test3"])
+      .create();
 
     request(app)
       .get("/")
@@ -32,8 +35,14 @@ describe("Pivot Server", function() {
   });
 
   it("should setup multiple feature", function(done) {
-    experiments.feature("testing123", ["test1","test2","test3"]);
-    experiments.feature("myFeature");
+    experiments
+      .feature("testing123")
+      .variants(["test1","test2","test3"])
+      .create();
+
+    experiments
+      .feature("myFeature")
+      .create();
 
     request(app)
       .get("/")

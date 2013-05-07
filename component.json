@@ -15,6 +15,7 @@
   "license": "MIT",
   "main": "lib/pivot.js",
   "scripts": [
+    "lib/feature.js",
     "lib/pivot.js",
     "lib/proto.js"
   ]
